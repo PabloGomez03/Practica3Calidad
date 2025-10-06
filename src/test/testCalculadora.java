@@ -8,7 +8,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class testCalcualdora {
+import Practica3.Calculadora;
+
+class testCalculadora {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
