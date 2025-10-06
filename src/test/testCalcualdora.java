@@ -27,8 +27,33 @@ class testCalcualdora {
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testSuma() {
+		
+		assertEquals(5,Calculadora.suma(2,3));
+		
+		
+	}
+	
+	@Test
+	void testResta() {
+		
+		assertEquals(1,Calculadora.resta(3,2));
+		
+	}
+	
+	@Test
+	void testMultiplica() {
+		
+		assertEquals(6,Calculadora.multiplica(2,3));
+		
+	}
+	
+	@Test
+	void testDivide() {
+		
+		assertEquals(1,Calculadora.divide(3,3));
+		
+		
 	}
 
 }
