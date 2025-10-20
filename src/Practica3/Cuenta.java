@@ -6,14 +6,16 @@ public class Cuenta {
 	public String titular;
 	public Double saldo;
 
-	public Cuenta(int i) {
+	public Cuenta(double i) {
+		
+		this.saldo = i;
 		
 	}
 
 	public void Ingresa(double i) {
 		// TODO Auto-generated method stub
 		
-		saldo = 100.0;
+		this.saldo += i;
 		
 	}
 
@@ -31,7 +33,14 @@ public class Cuenta {
 	public void Retira(double i) {
 		// TODO Auto-generated method stub
 		
-		saldo = -100.0;
+		double res = saldo - i;
+		
+		if(res>=-500)
+		this.saldo -= i;
+		else {
+			
+			System.out.println("Fondos insuficientes en la cuenta "+this.titular+"!!\n");
+		}
 		
 	}
 
